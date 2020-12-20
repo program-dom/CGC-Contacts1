@@ -1,0 +1,218 @@
+body {
+	font-style: 16px;
+	color: #fff;
+	background-color: #61122f;
+	font-family: 'Oxygen', sans-serif;
+}
+#header-nav {
+	background-color: #f6b319;
+	border-radius :0;
+	border: 0;
+}
+.navbar-custom {
+	height: 180px;
+}
+#logo-img {
+	background: url('../images/cgc-logo2.jpg') no-repeat;
+	width:150px;
+	height:150px;
+	margin:10px 15px 10px 0;
+}
+.navbar-brand {
+	padding-top: 25px;
+}
+.navbar-brand h1 {
+	font-family: 'Franklin Gothic Demi Cond', arial;
+	color: black;
+	font-size: 50px;     /*1.5em;*/
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+.navbar-brand span {
+	color: red;
+}
+.navbar-brand h6 {
+	color: black;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+/*.navbar-brand p {
+	color: #000;
+	text-transform: uppercase;
+	font-size: .7em;
+	margin-top: 15px;
+}
+.navbar-brand p span {
+	vertical-align: middle;
+}*/
+/*END HEADER*/
+/*FOOTER*/
+.panel-footer {
+	margin-top: 30px;
+	padding-top: : 35px;
+	padding-bottom: 30px;
+	background-color: #222;
+	border-top: 0;
+}
+.panel-footer div.row {
+	margin-bottom:35px;
+}
+#hours, #address, #team {
+	line-height: 2;
+}
+#hours > span, #address > span, #team > span {
+	font-size: 1.3em;
+}
+/*FOOTER*/
+
+/*HOME PAGE*/
+#officials-tile, #hostels-tile, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+}
+#officials-tile:hover, #hostels-tile:hover, #map-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#officials-tile {
+	background: url('../images/cgc-contact.jpg') no-repeat;
+	background-position: center;
+	object-fit: fill;
+}
+#hostels-tile {
+	background: url('../images/cgc-hostel.jpg') no-repeat;
+	background-position: center;
+	object-fit: fill;
+}
+
+#officials-tile span, #hostels-tile span, #map-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+
+/*END HOME*/
+
+/*OFFICIAL CATAGORY*/
+#contact-list {
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	margin: 0 auto 15px;
+	margin-top: 10px;
+	background-color: #000000;
+	list-style-type: none;
+}
+#contact-list a {
+	color: #951C49;
+	text-align: center;
+}
+#contact-list a:hover {
+	background: #E7E7E7;
+}
+#nav-list a span {
+	font-size: 1.8em;
+}
+
+/*large devices*/
+@media (min-width: 1200px) {
+	.container .jumbotron {
+		background: url('../images/cgc-img5.jpg') no-repeat;
+		height: 575px;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
+		object-fit: fill;
+	}
+	.centered {
+		font-family: 'Franklin Gothic Demi Cond', arial;
+ 	    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 40px;
+	}
+	.top-centered {
+		font-family: 'Franklin Gothic Demi Cond', arial;
+ 	    position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 40px;
+	}
+}
+/*medium devices*/
+@media (min-width: 992px) and (max-width:1199px) {
+	#logo-img {
+		background: url('../images/cgc-logo2.jpg') no-repeat;
+		width: 100px;
+		height: 100px
+		margin: 5px 5px 5px 0;
+	}
+	.container .jumbotron {
+		background: url('../images/cgc-img5.jpg') no-repeat;
+		height: 558px;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F; 
+	}
+}
+/*small device*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.container .jumbotron {
+		background: url('../images/cgc-img.jpg') no-repeat;
+		height: : 432px;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
+		object-fit: contain;
+	}
+}
+/*extra small device*/
+@media (max-width: 767px) {
+	/*header*/
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1 {
+		padding-top: 10px;
+		font-size: 5vw;
+	}
+	#collapsable-nav a {
+		font-size: 1.2em;
+	}
+	#collapsable-nav a span {
+		font-size: 1em;
+		margin-right: 5px;
+	}
+	/*end header*/
+
+	/*footer*/
+	.panel-footer section {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.panel-footer section:nth-child(3) {
+		margin-bottom: 0;
+	}
+	.panel-footer section hr {
+		width: 50%;
+	}
+	/*end footer*/
+}
