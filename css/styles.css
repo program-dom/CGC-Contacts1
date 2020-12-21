@@ -22,7 +22,8 @@ body {
 	padding-top: 25px;
 }
 .navbar-brand h1 {
-	font-family: 'Franklin Gothic Demi Cond', arial;
+	/*font-family: 'Franklin Gothic Demi Cond', arial;*/
+	font-family: 'Archivo Black', sans-serif;
 	color: black;
 	font-size: 50px;     /*1.5em;*/
 	text-transform: uppercase;
@@ -140,7 +141,8 @@ body {
 		object-fit: fill;
 	}
 	.centered {
-		font-family: 'Franklin Gothic Demi Cond', arial;
+		/*font-family: 'Franklin Gothic Demi Cond', arial;*/
+		font-family: 'Archivo Black', sans-serif;
  	    position: absolute;
         top: 50%;
         left: 50%;
